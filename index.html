@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- ICON STYLE SHEET -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="serach">
+        <input
+          type="search"
+          name="search"
+          id="search_bar"
+          placeholder="Enter City Name"
+          autocomplete="off"
+          list="cities"
+        />
+
+        <datalist id="cities">
+          <option value="Karachi"></option>
+          <option value="Lahore"></option>
+          <option value="Islamabad"></option>
+          <option value="Peshawar"></option>
+          <option value="Quetta"></option>
+          <option value="Multan"></option>
+          <option value="Rawalpindi"></option>
+          <option value="Faisalabad"></option>
+        </datalist>
+
+        <button type="submit" id="search_btn">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+      <img src="images/default.png" alt="weather image" id="image" />
+      <h1 class="headings" id="temp">0&#8451;</h1>
+      <h2 class="headings">
+        <span id="city">City</span> <sup id="country">ctry</sup>
+      </h2>
+
+      <div id="details">
+        <div class="box">
+          <div class="boxes">
+            <i class="fas fa-tint icon"></i>
+            <span id="humidity">0%</span>
+          </div>
+          <span>Humidity</span>
+        </div>
+        <div class="box">
+          <div class="boxes">
+            <i class="fas fa-wind icon"></i>
+            <span id="wind">0 km/hr</span>
+          </div>
+          <span>Wind</span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- CUSTOM SCRIPT -->
+  <script src="script.js"></script>
+</html>

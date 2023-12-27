@@ -1,0 +1,95 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Roboto:wght@500&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: cabin;
+  user-select: none;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/bg.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(194, 255, 255),
+    rgb(92, 231, 255),
+    rgb(0, 217, 255),
+    rgb(0, 174, 255)
+  );
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px 20px;
+  border-radius: 20px;
+}
+#search_bar {
+  width: 250px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  /* text-indent: 20px; */
+  padding: 5px 20px;
+  font-size: 1.1rem;
+  background-color: rgba(255, 255, 255, 0.616);
+  list-style: none;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+datalist::-webkit-calendar-picker-indicator {
+  display: none;
+  opacity: 0;
+}
+#search_btn {
+  background-color: transparent;
+  border: none;
+  font-size: 1.3rem;
+  margin-left: -35px;
+  color: rgb(0, 204, 255);
+  cursor: pointer;
+}
+#image {
+  height: 130px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.headings {
+  color: rgb(244, 250, 255);
+  letter-spacing: 1px;
+  font-size: 2rem;
+}
+sup {
+  font-size: 1rem;
+}
+#details {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 250px;
+  margin: 10px;
+  margin-top: 30px;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: aliceblue;
+}
+.icon {
+  font-size: 2rem;
+}
